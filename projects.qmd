@@ -1,9 +1,8 @@
 ---
 title: "Projects"
+listing:
+  - id: (PowerBI)-Fifa-World-Cup-Statistics
+    contents: "fifaworldcup.qmd"
+    type: grid
+    
 ---
-
-## Project 1
-
-## Project 2
-
-## Project 3
