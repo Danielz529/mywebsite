@@ -12,26 +12,36 @@ about:
       href: https://github.com/Danielz529/mywebsite
 ---
 
-# Education
+## Education
 ##### **University of California, San Diego**
 
 BS in Business Economics | Sept 2022 - June 2024
 
-##### Google Data Analytics  
+##### **Google Data Analytics**  
 
 July 2023
 
-##### City College of San Francisco
+##### **City College of San Francisco**
 
 AS Business Administration | May 2018 - May 2022
 
 ## Experience
-UCSD - Office for Equity, Diversity, and Inclusion
 
-2022 - Present
+##### **UCSD - Office for Equity, Diversity, and Inclusion**
 
-Entrepreneur 
+###### 2022 - Present | San Diego, CA
 
-2020-2023
+Excel: Played a proactive role in gathering, intricately organizing, and meticulously analyzing data, utilizing Excel extensively. This substantial contribution significantly propelled the progress of ongoing diversity research projects.
 
+Efficiany: Showcased adeptness in employing software and tools, including Microsoft Office and Google Suite, to handle tasks ranging from data management and intricate scheduling to facilitating streamlined communication.
+
+##### **Entrepreneur** 
+
+###### 2020-2023 | San Francisco, CA
+
+Entrepreneurship: Purchased items in order to resell them for profit, with an average profit margin of 75%.
+
+Market Research: Researched market trends to find items that would provide the highest profit margins and have low turn around times.
+
+Excel: Used to excel to keep track of inventory, business costs, retinue, profits, return on investment, and a balalance sheets.
 
