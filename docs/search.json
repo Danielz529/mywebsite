@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Hello and welcome to my page\n\n  \n\n\nThanks for checking out my web site!"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Daniel Lopez",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego\nBS in Business Economics | Sept 2020 - June 2024\nCity College of San Francisco\nAS Business Administration | May 2018 - May 2022"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Daniel Lopez",
+    "section": "Experience",
+    "text": "Experience\nUniversity of California, San Diego - Office for Equity, Diversity, and Inclusion\n2022 - Present\nEntrepreneur\n2020-2023"
   },
   {
     "objectID": "projects.html#project-2",
@@ -19,5 +26,12 @@
     "title": "Projects",
     "section": "Project 3",
     "text": "Project 3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel Lopez",
+    "section": "",
+    "text": "Hello and welcome to my page"
   }
 ]

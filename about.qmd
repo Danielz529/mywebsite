@@ -1,0 +1,31 @@
+---
+title: "Daniel Lopez"
+image: img/profile.png
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/Danielz529/mywebsite
+---
+###
+
+## Education
+University of California, San Diego
+
+BS in Business Economics | Sept 2020 - June 2024
+
+City College of San Francisco
+
+AS Business Administration | May 2018 - May 2022
+
+## Experience
+University of California, San Diego - Office for Equity, Diversity, and Inclusion
+
+2022 - Present
+
+Entrepreneur 
+
+2020-2023
+
+
