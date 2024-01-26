@@ -11,26 +11,27 @@ about:
       text: GitHub
       href: https://github.com/Danielz529/mywebsite
 ---
-###
 
-## Education
-University of California, San Diego
+# Education
+##### **University of California, San Diego**
 
 BS in Business Economics | Sept 2022 - June 2024
 
-City College of San Francisco
+##### Google Data Analytics  
+
+July 2023
+
+##### City College of San Francisco
 
 AS Business Administration | May 2018 - May 2022
 
 ## Experience
-University of California, San Diego - Office for Equity, Diversity, and Inclusion
+UCSD - Office for Equity, Diversity, and Inclusion
 
 2022 - Present
 
 Entrepreneur 
 
 2020-2023
-
-## Certification
 
 

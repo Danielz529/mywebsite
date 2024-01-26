@@ -18,8 +18,8 @@ website:
 
 format:
   html:
-    theme: darkly
-    toc: true
+    theme: lux
+    toc: false
 
 editor: source
 
