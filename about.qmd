@@ -4,6 +4,9 @@ image: img/profile.png
 about:
   template: trestles
   links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/daniellopez529/
     - icon: github
       text: GitHub
       href: https://github.com/Danielz529/mywebsite
@@ -13,7 +16,7 @@ about:
 ## Education
 University of California, San Diego
 
-BS in Business Economics | Sept 2020 - June 2024
+BS in Business Economics | Sept 2022 - June 2024
 
 City College of San Francisco
 
@@ -27,5 +30,7 @@ University of California, San Diego - Office for Equity, Diversity, and Inclusio
 Entrepreneur 
 
 2020-2023
+
+## Certification
 
 
