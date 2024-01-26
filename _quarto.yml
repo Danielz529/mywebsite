@@ -5,6 +5,7 @@ project:
 website:
   title: "Daniel Lopez"
   navbar:
+    background: "#CDB490"
     left:
       - href: index.qmd
         text: Home
