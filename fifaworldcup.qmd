@@ -2,10 +2,8 @@
 title: "[PowerBi] FIFA World Cup Statistics"
 description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
-image: img/worldcup.png
+image: img/logo.png
 ---
-In this Power BI project I gathered information from every FIFA World Cup from 1930 to the most recent one in 2022.
-
 
 # PowerBi
 
@@ -19,7 +17,7 @@ The overall page displays basic information from all FIFA World Cups
 
 - Histogram with Sum of Goals and Year: Keeps track of goals scored in each World Cup.
 
-![](img/OverallPage.png)
+![](img/powerbi/OverallPage.png)
 
 ### All teams page
 
@@ -29,15 +27,15 @@ This page allows you to select a country and display their Win/Draw/Loss rate an
 
 - Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.
 
-![](img/Allteams.png)
+![](img/powerbi/Allteams.png)
 
-![All Teams example with England selected](img/AllteamsEx.png)
+![All Teams example with England selected](img/powerbi/AllteamsEx.png)
 
 ### Year page
 
 This page has a markdown bar that lets you select a World Cup year and presents information based on the year.
 
-- Host: Displays the respective years Banner and Golden Boot winner.
+- Host: Displays the respective years Banner and Golden Ball winner.
 
 - Information table: Displays the games, attendance, teams, and goals for that World Cup.
 
@@ -45,9 +43,9 @@ This page has a markdown bar that lets you select a World Cup year and presents 
 
 - Placement table: Table displaying the World Cup Winner of that year, second, and third place.
 
-![](img/year.png)
+![](img/powerbi/year.png)
 
-![Year example with 2006 selected and showing markdown bar](img/yearex.png)
+![Year example with 2006 selected and showing markdown bar](img/powerbi/yearex.png)
 
 ### Winners page
 Alike the All Teams page this displays information for only World Cup winners.
@@ -58,30 +56,45 @@ Alike the All Teams page this displays information for only World Cup winners.
 
 - Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.
 
-![](img/winner.png)
+![](img/powerbi/winner.png)
 
-![Winners example with Italy selected](img/winnersex.png)
+![Winners example with Italy selected](img/powerbi/winnersex.png)
 
 # Excel
 
 ### World Cup Matches
 Keeps track of all World Cup matches that have taken place. Includes statistics like year, stage, teams, score, and many more.
 
+![](img/excel/worldcupmatches.png)
+
 ### World Cups
-This sheet keeps track of the year, host, World Cup winner, goals scored, attendance, and Golden Boot Winner.
+This sheet keeps track of the year, host, World Cup winner, goals scored, attendance, and Golden Ball Winner.
+
+![](img/excel/worldcups.png)
 
 ### All Team Stats
 The data in this sheet is meant to track every country who has participated statistics, this includes games played, wins, losses, draws, goals scored, and goals received.
 
+![](img/excel/allteamstats.png)
+
 ### Top Team Stats
 Here is the statistics for every World Cup Winner.
+
+![](img/excel/topteamstats.png)
 
 ### Top Team Images
 Here I used this sheet to store the images for the first, second, and third place for every World Cup.
 
+![](img/excel/topteamsim.png)
+
 ### Hosts Images
 This sheet is used to store the host poster for every World Cup.
 
-### Golden Boot Winners
-This sheet is used to store images of every Golden Boot Winner.
+![](img/excel/hostsim.png)
 
+### Golden Boot Winners
+This sheet is used to store images of every Golden Ball Winner.
+
+![](img/excel/GoldenBallIm.png)
+
+[View on GitHub](https://github.com/Danielz529/worldcupstatistics)
