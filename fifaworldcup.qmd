@@ -2,7 +2,7 @@
 title: "[PowerBi] FIFA World Cup Statistics"
 description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
-image: worldcup.png
+image: img/worldcup.png
 ---
 In this Power BI project I gathered information from every FIFA World Cup from 1930 to the most recent one in 2022.
 
@@ -12,11 +12,14 @@ In this Power BI project I gathered information from every FIFA World Cup from 1
 ### Overall Page
 The overall page displays basic information from all FIFA World Cups
 
+
 - Countries Participated: Keeps count of all countries that have participated. 
 
 - Games Played: Keeps count of all games that have been played.
 
 - Histogram with Sum of Goals and Year: Keeps track of goals scored in each World Cup.
+
+![](img/OverallPage.png)
 
 ### All teams page
 
@@ -25,6 +28,10 @@ This page allows you to select a country and display their Win/Draw/Loss rate an
 - Wins/Draws/Losses chart: This pie chart displays the total games won, drawn, and lost.
 
 - Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.
+
+![](img/Allteams.png)
+
+![All Teams example with England selected](img/AllteamsEx.png)
 
 ### Year page
 
@@ -38,15 +45,22 @@ This page has a markdown bar that lets you select a World Cup year and presents 
 
 - Placement table: Table displaying the World Cup Winner of that year, second, and third place.
 
+![](img/year.png)
+
+![Year example with 2006 selected and showing markdown bar](img/yearex.png)
 
 ### Winners page
 Alike the All Teams page this displays information for only World Cup winners.
 
-- **Winners table**: Displays the World Cup winners and the year they won. If they have won multiple times it will list all the years that they have won.
+- Winners table: Displays the World Cup winners and the year they won. If they have won multiple times it will list all the years that they have won.
 
 - Wins/Draws/Losses chart: This pie chart displays the total games won, drawn, and lost.
 
 - Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.
+
+![](img/winner.png)
+
+![Winners example with Italy selected](img/winnersex.png)
 
 # Excel
 
