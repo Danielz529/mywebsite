@@ -4,7 +4,7 @@ description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
 image: worldcup.png
 ---
-In this PowerBI project I gathered information from every FIFA World Cup from 1930 to the most recent one in 2022.
+In this Power BI project I gathered information from every FIFA World Cup from 1930 to the most recent one in 2022.
 
 
 # PowerBi
