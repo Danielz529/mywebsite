@@ -43,5 +43,5 @@ Entrepreneurship: Purchased items in order to resell them for profit, with an av
 
 Market Research: Researched market trends to find items that would provide the highest profit margins and have low turn around times.
 
-Excel: Used to excel to keep track of inventory, business costs, retinue, profits, return on investment, and a balalance sheets.
+Excel: Used to excel to keep track of inventory, business costs, revenue, profits, return on investment, and a balance sheets.
 

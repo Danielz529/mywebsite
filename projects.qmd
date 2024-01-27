@@ -4,5 +4,4 @@ listing:
   - id: (PowerBI)-Fifa-World-Cup-Statistics
     contents: "fifaworldcup.qmd"
     type: grid
-    
 ---
