@@ -11,7 +11,7 @@ website:
         text: Home
       - file: projects.qmd
         text: Projects
-      - file: resume/resume.qmd
+      - file: resume/index.qmd
         text: Resume
       - file: about.qmd
         text: About

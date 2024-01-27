@@ -1,0 +1,5 @@
+---
+title: Resume
+cv:
+  pdf: "Daniel_Lopez_Resume_1/25.pdf"
+---
