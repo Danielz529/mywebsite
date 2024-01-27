@@ -2,6 +2,7 @@
 title: "[PowerBi] FIFA World Cup Statistics"
 description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
+image: worldcup.png
 ---
 In this PowerBI project I gathered information from every FIFA World Cup from 1930 to the most recent one in 2022.
 
@@ -56,7 +57,7 @@ Keeps track of all World Cup matches that have taken place. Includes statistics 
 This sheet keeps track of the year, host, World Cup winner, goals scored, attendance, and Golden Boot Winner.
 
 ### All Team Stats
-The data in this sheet is meant to track every country who has participated statistics, this includes games played, wins, loses, draws, goals scored, and goals recieved.
+The data in this sheet is meant to track every country who has participated statistics, this includes games played, wins, losses, draws, goals scored, and goals received.
 
 ### Top Team Stats
 Here is the statistics for every World Cup Winner.

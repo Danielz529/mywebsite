@@ -24,7 +24,6 @@ website:
 format:
   html:
     theme: [lux, custom.scss]
-    css: styles.css
     toc: false
 
 editor: source
