@@ -2,8 +2,8 @@
 title: "[PowerBi] FIFA World Cup Statistics"
 description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
-image: img/logo.png
 ---
+![](img/rsz_wclogo.png)
 
 # PowerBi
 
