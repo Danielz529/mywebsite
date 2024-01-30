@@ -4,6 +4,8 @@ description: "Statistics on all FIFA World Cups from 1930 to 2022"
 toc: true
 ---
 
+This Power BI project analyzes FIFA World Cup data to provide comprehensive insights into team performance through interactive visualizations and data-driven narratives.
+
 # PowerBi
 
 ### Overall Page
