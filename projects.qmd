@@ -1,7 +1,15 @@
 ---
 title: "Projects"
 listing:
-  - id: (PowerBI)-Fifa-World-Cup-Statistics
-    contents: "fifaworldcup.qmd"
-    type: grid
+  - id: pokemon_analysis
+    contents: "project/**/Pokemon.qmd"
+    type: default
+    categories: true
+
+  - id: fifa_world_cup_statistics
+    contents: "project/**/fifaworldcup.qmd"
+    type: default
+    categories: true
+page-layout: full
 ---
+

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-07-01">
-<meta name="description" content="Statistics on all FIFA World Cups from 1930 to 2022">
+<meta name="dcterms.date" content="2024-01-30">
+<meta name="description" content="Analysis on Pokemon, from generation 1 to 5">
 
-<title>Daniel Lopez - [Power BI] FIFA World Cup Statistics</title>
+<title>Daniel Lopez - [R] Pokemon Analysis (Currently In Progress)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -109,42 +109,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#powerbi" id="toc-powerbi" class="nav-link active" data-scroll-target="#powerbi">PowerBi</a>
-  <ul class="collapse">
-  <li><a href="#overall-page" id="toc-overall-page" class="nav-link" data-scroll-target="#overall-page">Overall Page</a></li>
-  <li><a href="#all-teams-page" id="toc-all-teams-page" class="nav-link" data-scroll-target="#all-teams-page">All teams page</a></li>
-  <li><a href="#year-page" id="toc-year-page" class="nav-link" data-scroll-target="#year-page">Year page</a></li>
-  <li><a href="#winners-page" id="toc-winners-page" class="nav-link" data-scroll-target="#winners-page">Winners page</a></li>
-  </ul></li>
-  <li><a href="#excel" id="toc-excel" class="nav-link" data-scroll-target="#excel">Excel</a>
-  <ul class="collapse">
-  <li><a href="#world-cup-matches" id="toc-world-cup-matches" class="nav-link" data-scroll-target="#world-cup-matches">World Cup Matches</a></li>
-  <li><a href="#world-cups" id="toc-world-cups" class="nav-link" data-scroll-target="#world-cups">World Cups</a></li>
-  <li><a href="#all-team-stats" id="toc-all-team-stats" class="nav-link" data-scroll-target="#all-team-stats">All Team Stats</a></li>
-  <li><a href="#top-team-stats" id="toc-top-team-stats" class="nav-link" data-scroll-target="#top-team-stats">Top Team Stats</a></li>
-  <li><a href="#top-team-images" id="toc-top-team-images" class="nav-link" data-scroll-target="#top-team-images">Top Team Images</a></li>
-  <li><a href="#hosts-images" id="toc-hosts-images" class="nav-link" data-scroll-target="#hosts-images">Hosts Images</a></li>
-  <li><a href="#golden-boot-winners" id="toc-golden-boot-winners" class="nav-link" data-scroll-target="#golden-boot-winners">Golden Boot Winners</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">[Power BI] FIFA World Cup Statistics</h1>
+<h1 class="title">[R] Pokemon Analysis (Currently In Progress)</h1>
 </div>
 
 <div>
   <div class="description">
-    Statistics on all FIFA World Cups from 1930 to 2022
+    Analysis on Pokemon, from generation 1 to 5
   </div>
 </div>
 
@@ -155,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 1, 2023</p>
+      <p class="date">January 30, 2024</p>
     </div>
   </div>
   
@@ -165,109 +141,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This Power BI project analyzes FIFA World Cup data to provide comprehensive insights into team performance through interactive visualizations and data-driven narratives.</p>
-<section id="powerbi" class="level1">
-<h1>PowerBi</h1>
-<section id="overall-page" class="level3">
-<h3 class="anchored" data-anchor-id="overall-page">Overall Page</h3>
-<p>The overall page displays basic information from all FIFA World Cups</p>
-<ul>
-<li><p>Countries Participated: Keeps count of all countries that have participated.</p></li>
-<li><p>Games Played: Keeps count of all games that have been played.</p></li>
-<li><p>Histogram with Sum of Goals and Year: Keeps track of goals scored in each World Cup.</p></li>
-</ul>
-<p><img src="img/powerbi/OverallPage.png" class="img-fluid"></p>
-</section>
-<section id="all-teams-page" class="level3">
-<h3 class="anchored" data-anchor-id="all-teams-page">All teams page</h3>
-<p>This page allows you to select a country and display their Win/Draw/Loss rate and their Goals scored and Against.</p>
-<ul>
-<li><p>Wins/Draws/Losses chart: This pie chart displays the total games won, drawn, and lost.</p></li>
-<li><p>Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.</p></li>
-</ul>
-<p><img src="img/powerbi/Allteams.png" class="img-fluid"></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/powerbi/AllteamsEx.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">All Teams example with England selected</figcaption>
-</figure>
-</div>
-</section>
-<section id="year-page" class="level3">
-<h3 class="anchored" data-anchor-id="year-page">Year page</h3>
-<p>This page has a markdown bar that lets you select a World Cup year and presents information based on the year.</p>
-<ul>
-<li><p>Host: Displays the respective years Banner and Golden Ball winner.</p></li>
-<li><p>Information table: Displays the games, attendance, teams, and goals for that World Cup.</p></li>
-<li><p>Match Schedule: Displays the match schedule for that World Cup, includes Date, Stage, Home team, Away team, and Winner.</p></li>
-<li><p>Placement table: Table displaying the World Cup Winner of that year, second, and third place.</p></li>
-</ul>
-<p><img src="img/powerbi/year.png" class="img-fluid"></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/powerbi/yearex.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Year example with 2006 selected and showing markdown bar</figcaption>
-</figure>
-</div>
-</section>
-<section id="winners-page" class="level3">
-<h3 class="anchored" data-anchor-id="winners-page">Winners page</h3>
-<p>Alike the All Teams page this displays information for only World Cup winners.</p>
-<ul>
-<li><p>Winners table: Displays the World Cup winners and the year they won. If they have won multiple times it will list all the years that they have won.</p></li>
-<li><p>Wins/Draws/Losses chart: This pie chart displays the total games won, drawn, and lost.</p></li>
-<li><p>Goals scored/Goals against: This pie chart displays the goals scored and the goals received by each country.</p></li>
-</ul>
-<p><img src="img/powerbi/winner.png" class="img-fluid"></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/powerbi/winnersex.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Winners example with Italy selected</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="excel" class="level1">
-<h1>Excel</h1>
-<section id="world-cup-matches" class="level3">
-<h3 class="anchored" data-anchor-id="world-cup-matches">World Cup Matches</h3>
-<p>Keeps track of all World Cup matches that have taken place. Includes statistics like year, stage, teams, score, and many more.</p>
-<p><img src="img/excel/worldcupmatches.png" class="img-fluid"></p>
-</section>
-<section id="world-cups" class="level3">
-<h3 class="anchored" data-anchor-id="world-cups">World Cups</h3>
-<p>This sheet keeps track of the year, host, World Cup winner, goals scored, attendance, and Golden Ball Winner.</p>
-<p><img src="img/excel/worldcups.png" class="img-fluid"></p>
-</section>
-<section id="all-team-stats" class="level3">
-<h3 class="anchored" data-anchor-id="all-team-stats">All Team Stats</h3>
-<p>The data in this sheet is meant to track every country who has participated statistics, this includes games played, wins, losses, draws, goals scored, and goals received.</p>
-<p><img src="img/excel/allteamstats.png" class="img-fluid"></p>
-</section>
-<section id="top-team-stats" class="level3">
-<h3 class="anchored" data-anchor-id="top-team-stats">Top Team Stats</h3>
-<p>Here is the statistics for every World Cup Winner.</p>
-<p><img src="img/excel/topteamstats.png" class="img-fluid"></p>
-</section>
-<section id="top-team-images" class="level3">
-<h3 class="anchored" data-anchor-id="top-team-images">Top Team Images</h3>
-<p>Here I used this sheet to store the images for the first, second, and third place for every World Cup.</p>
-<p><img src="img/excel/topteamsim.png" class="img-fluid"></p>
-</section>
-<section id="hosts-images" class="level3">
-<h3 class="anchored" data-anchor-id="hosts-images">Hosts Images</h3>
-<p>This sheet is used to store the host poster for every World Cup.</p>
-<p><img src="img/excel/hostsim.png" class="img-fluid"></p>
-</section>
-<section id="golden-boot-winners" class="level3">
-<h3 class="anchored" data-anchor-id="golden-boot-winners">Golden Boot Winners</h3>
-<p>This sheet is used to store images of every Golden Ball Winner.</p>
-<p><img src="img/excel/GoldenBallIm.png" class="img-fluid"></p>
-<p><a href="https://github.com/Danielz529/worldcupstatistics">View on GitHub</a></p>
+<p>Pokemon analysis</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
