@@ -1,0 +1,61 @@
+---
+title: "Pokemon Visualization Analysis (Currently In Progress)"
+description: "Analysis on Pokemon, from generation 1 to 5"
+toc: false
+date: 1/30/2024
+sort: "date desc"
+categories: 
+  - R
+  - Data set
+resources: pokemon.csv
+---
+
+![](logo.jpeg)
+
+Pokemon analysis
+
+Install required libraries
+
+```{r}
+#| error: true
+#| warning: false
+#| message: true
+#| layout-ncol: 2
+#| echo: true
+
+library(tidyverse)  
+library(stringr)
+library(gridExtra)
+library(repr)
+```
+
+```{r}
+#| error: false
+#| warning: false
+#| message: false
+#| layout-ncol: 2
+#| echo: false
+
+poke_data = read_csv("pokemon.csv")
+```
+
+Setting colors for the region
+```{r}
+generation_colors <- c("mistyrose", "lightblue", "moccasin", "plum",
+                       "darkseagreen1" )
+```
+
+Bar chart showing count of Pokemon in each generation
+```{r}
+poke_data |>
+    count(Generation) |>
+    ggplot(aes(x=Generation, y=n)) +                                  
+    geom_bar(stat ="identity", fill=generation_colors) +                                  
+    xlab("Generation") +                                              
+    ylab("Number of Pokemon") +                                
+    ggtitle("How many Pokemon are in each generation?") + 
+    geom_label(aes(label=n)) +
+    scale_x_continuous(expand = c(0,0), breaks = c(1,2,3,4,5), 
+                       labels = c("Kanto","Johto","Hoenn","Sinnoh","Unova")) +
+    theme_minimal()
+```   

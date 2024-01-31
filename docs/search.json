@@ -25,7 +25,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Pokemon Analysis (Currently In Progress)\n\n\n\n\n\n\n\nR\n\n\nData set\n\n\n\n\nAnalysis on Pokemon, from generation 1 to 5\n\n\n\n\n\n\nJan 30, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n  \n\n\n\n\nFIFA World Cup Statistics\n\n\n\n\n\n\n\nPower Bi\n\n\nData set\n\n\n\n\nStatistics on all FIFA World Cups from 1930 to 2022\n\n\n\n\n\n\nJul 1, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Pokemon Visualization Analysis (Currently In Progress)\n\n\n\n\n\n\n\nR\n\n\nData set\n\n\n\n\nAnalysis on Pokemon, from generation 1 to 5\n\n\n\n\n\n\nJan 30, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n  \n\n\n\n\nFIFA World Cup Statistics\n\n\n\n\n\n\n\nPower Bi\n\n\nData set\n\n\n\n\nStatistics on all FIFA World Cups from 1930 to 2022\n\n\n\n\n\n\nJul 1, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resume/index.html",
@@ -65,8 +65,15 @@
   {
     "objectID": "project/Pokemon.html",
     "href": "project/Pokemon.html",
-    "title": "Pokemon Analysis (Currently In Progress)",
+    "title": "Pokemon Visualization Analysis (Currently In Progress)",
     "section": "",
-    "text": "Pokemon analysis"
+    "text": "Pokemon analysis\nInstall required libraries\n\nlibrary(tidyverse)  \nlibrary(stringr)\nlibrary(gridExtra)\nlibrary(repr)"
+  },
+  {
+    "objectID": "project/pokemon/Pokemon.html",
+    "href": "project/pokemon/Pokemon.html",
+    "title": "Pokemon Visualization Analysis (Currently In Progress)",
+    "section": "",
+    "text": "Pokemon analysis\nInstall required libraries\n\nlibrary(tidyverse)  \nlibrary(stringr)\nlibrary(gridExtra)\nlibrary(repr)\n\n\n\n\n\n\n\nSetting colors for the region\n\ngeneration_colors &lt;- c(\"mistyrose\", \"lightblue\", \"moccasin\", \"plum\",\n                       \"darkseagreen1\" )\n\nBar chart showing count of Pokemon in each generation\n\npoke_data |&gt;\n    count(Generation) |&gt;\n    ggplot(aes(x=Generation, y=n)) +                                  \n    geom_bar(stat =\"identity\", fill=generation_colors) +                                  \n    xlab(\"Generation\") +                                              \n    ylab(\"Number of Pokemon\") +                                \n    ggtitle(\"How many Pokemon are in each generation?\") + \n    geom_label(aes(label=n)) +\n    scale_x_continuous(expand = c(0,0), breaks = c(1,2,3,4,5), \n                       labels = c(\"Kanto\",\"Johto\",\"Hoenn\",\"Sinnoh\",\"Unova\")) +\n    theme_minimal()"
   }
 ]
