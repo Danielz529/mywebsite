@@ -17,9 +17,9 @@ Pokemon analysis
 Install required libraries
 
 ```{r}
-#| error: true
+#| error: false
 #| warning: false
-#| message: true
+#| message: false
 #| layout-ncol: 2
 #| echo: true
 
@@ -59,3 +59,68 @@ poke_data |>
                        labels = c("Kanto","Johto","Hoenn","Sinnoh","Unova")) +
     theme_minimal()
 ```   
+
+Bar chart for the count of type primary and secondary. 
+```{r}
+poke_data |>
+    count(Type_1) |>
+    ggplot(aes(x=Type_1, y=n)) +
+    geom_bar(stat = "identity", fill = 'lightblue') +
+    xlab("Primary Type") + 
+    ylab("Count") +
+    ggtitle("Primary Type Count") +
+    geom_label(aes(label=n)) +
+    theme_minimal() +
+    theme(axis.text.x=element_text(angle=45, hjust=1))
+
+poke_data |>
+    count(Type_2) |>
+    ggplot(aes(x=Type_2, y=n)) +
+    geom_bar(stat = "identity", fill = 'plum') +
+    xlab("Secondary Type") + 
+    ylab("Count") +
+    ggtitle("Secondary Type Count") +
+    geom_label(aes(label=n)) +
+    theme_minimal() +
+    theme(axis.text.x=element_text(angle=45, hjust=1))
+
+```
+
+```{r}
+
+poke_data |>
+    group_by(Type_1, Type_2) |>
+    summarize(count = n()) |>
+    ggplot(aes(x = Type_1, y = Type_2, fill = count))+
+    geom_tile(show.legend = FALSE)+
+    geom_text(aes(label = count))+
+    labs(x = NULL, y = NULL, title = "Combination of Pokemon Types")+
+    scale_fill_gradient(low = 'white', high = 'darkseagreen1')+
+    scale_y_discrete(expand = c(0,0))+
+    scale_x_discrete(expand = c(0,0))+
+    theme_bw() +
+    theme(axis.text.x=element_text(angle=45, hjust=1))
+```
+
+Box plot of the Primary Type showing the types with most Total points to lowest
+```{r}
+ggplot(poke_data %>% group_by(Type_1) %>% mutate(med=median(Total)),
+       aes(x=reorder(Type_1, Total, FUN=median), y=Total)) +
+    geom_boxplot(aes(fill=med)) +
+    scale_fill_gradient(low="mistyrose", high="lightblue") +
+    coord_flip() +
+    labs(x="Type 1",
+         title="Boxplot of Total") +
+    theme_bw() +
+    theme(legend.position="none")
+```
+
+
+
+
+
+
+
+
+
+
