@@ -87,7 +87,7 @@ poke_data |>
 ```
 
 ```{r}
-
+#| message: false
 poke_data |>
     group_by(Type_1, Type_2) |>
     summarize(count = n()) |>
@@ -104,6 +104,7 @@ poke_data |>
 
 Box plot of the Primary Type showing the types with most Total points to lowest
 ```{r}
+
 ggplot(poke_data %>% group_by(Type_1) %>% mutate(med=median(Total)),
        aes(x=reorder(Type_1, Total, FUN=median), y=Total)) +
     geom_boxplot(aes(fill=med)) +
