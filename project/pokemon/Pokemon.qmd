@@ -63,8 +63,8 @@ poke_data |>
 Bar chart for the count of type primary and secondary. 
 ```{r}
 poke_data |>
-    count(Type_1) |>
-    ggplot(aes(x=Type_1, y=n)) +
+    count(Type.1) |>
+    ggplot(aes(x=Type.1, y=n)) +
     geom_bar(stat = "identity", fill = 'lightblue') +
     xlab("Primary Type") + 
     ylab("Count") +
@@ -74,8 +74,8 @@ poke_data |>
     theme(axis.text.x=element_text(angle=45, hjust=1))
 
 poke_data |>
-    count(Type_2) |>
-    ggplot(aes(x=Type_2, y=n)) +
+    count(Type.2) |>
+    ggplot(aes(x=Type.2, y=n)) +
     geom_bar(stat = "identity", fill = 'plum') +
     xlab("Secondary Type") + 
     ylab("Count") +
@@ -89,26 +89,24 @@ poke_data |>
 ```{r}
 #| message: false
 poke_data |>
-    group_by(Type_1, Type_2) |>
+    group_by(Type.1, Type.2) |>
     summarize(count = n()) |>
-    ggplot(aes(x = Type_1, y = Type_2, fill = count))+
+    ggplot(aes(x = Type.1, y = Type.2, fill = count))+
     geom_tile(show.legend = FALSE)+
     geom_text(aes(label = count))+
     labs(x = NULL, y = NULL, title = "Combination of Pokemon Types")+
-    scale_fill_gradient(low = 'white', high = 'darkseagreen1')+
+    scale_fill_gradient(low = 'mistyrose', high = 'lightblue')+
     scale_y_discrete(expand = c(0,0))+
     scale_x_discrete(expand = c(0,0))+
-    theme_bw() +
-    theme(axis.text.x=element_text(angle=45, hjust=1))
+    theme_bw()
 ```
 
 Box plot of the Primary Type showing the types with most Total points to lowest
 ```{r}
-
-ggplot(poke_data %>% group_by(Type_1) %>% mutate(med=median(Total)),
-       aes(x=reorder(Type_1, Total, FUN=median), y=Total)) +
+ggplot(poke_data |> group_by(Type.1) |> mutate(med=median(Total)),
+       aes(x=reorder(Type.1, Total, FUN=median), y=Total)) +
     geom_boxplot(aes(fill=med)) +
-    scale_fill_gradient(low="mistyrose", high="lightblue") +
+    scale_fill_gradient(low="mistyrose", high="plum") +
     coord_flip() +
     labs(x="Type 1",
          title="Boxplot of Total") +
@@ -116,11 +114,64 @@ ggplot(poke_data %>% group_by(Type_1) %>% mutate(med=median(Total)),
     theme(legend.position="none")
 ```
 
+```{r}
+poke_data |>
+  group_by(Generation) |>
+  summarize(Total=mean(Total)) |>
+  ggplot(aes(x=Generation, y=Total, group=1)) +
+  geom_line(colour="plum") +
+  geom_point() +
+  labs(y="Average Total",
+       title="Average Total for each generation") +
+  theme_bw() 
+```
 
+```{r}
+poke_data |>
+    group_by(Generation) |>
+    summarize(HP=mean(HP),
+              Attack=mean(Attack),
+              Sp.Atk=mean(Sp.Atk),
+              Defense=mean(Defense),
+              Sp.Def=mean(Sp.Def),
+              Speed=mean(Speed)) |>
+    gather(Stats, value, 2:7) |>
+    ggplot(aes(x=Generation, y=value, group=1)) +
+    geom_line(colour="plum") +
+    geom_point() +
+    facet_wrap(~Stats) +
+    labs(y="Average Stats") +
+    theme_bw() 
+```
 
+```{r}
+poke_data |>
+  filter(Legendary=="FALSE") |>
+  select(Name, Total) |>
+  arrange(desc(Total)) |>
+  slice(1:20) |>
+  ggplot(aes(x=reorder(Name, Total), y=Total)) +
+  geom_bar(stat="identity", aes(fill=Total), colour="black", show.legend=FALSE) +
+  scale_fill_gradient(low="mistyrose", high="plum") +
+  geom_label(aes(label=Total)) +
+  coord_flip() +
+  labs(x="Name", title="Top 20 Total Non Legendary Pokémon") +
+  theme_bw()
+```
 
-
-
+```{r}
+poke_data |>
+  select(Name, Total) |>
+  arrange(desc(Total)) |>
+  slice(1:20) |>
+  ggplot(aes(x=reorder(Name, Total), y=Total)) +
+  geom_bar(stat="identity", aes(fill=Total), colour="black", show.legend=FALSE) +
+  scale_fill_gradient(low="mistyrose", high="plum") +
+  geom_label(aes(label=Total)) +
+  coord_flip() +
+  labs(x="Name", title="Top 20 Total Pokémon") +
+  theme_bw() 
+```
 
 
 
