@@ -3,7 +3,7 @@ title: "Daniel Lopez"
 about:
   id: me
   template: jolla
-  image: img/profile.png
+  image: img/profpic.jpeg
   links:
     - icon: linkedin
       text: LinkedIn
